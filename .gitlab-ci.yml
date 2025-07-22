@@ -1,0 +1,14 @@
+---
+include:
+  - project: 'iac/core-ci'
+    file: '/templates/workflows/dynamic.yml'
+    ref: main
+  - project: 'iac/core-ci'
+    file: '/templates/workflows/tag-deploy.yml'
+    ref: main
+
+variables:
+  VAULT_JWT_BACKEND: "jwt-gitlab"
+  TF_VAR_vault_role: "opensearch-datastream-mgmt"
+  AUTO_APPPROVE: true
+  # DEBUG: "1"
