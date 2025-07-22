@@ -2,13 +2,13 @@
 include:
   - project: 'iac/core-ci'
     file: '/templates/workflows/dynamic.yml'
-    ref: main
+    ref: v2.0.0
   - project: 'iac/core-ci'
     file: '/templates/workflows/tag-deploy.yml'
-    ref: main
+    ref: v2.0.0
 
 variables:
   VAULT_JWT_BACKEND: "jwt-gitlab"
   TF_VAR_vault_role: "opensearch-datastream-mgmt"
   AUTO_APPPROVE: true
-  # DEBUG: "1"
+  DEBUG: 0
