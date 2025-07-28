@@ -109,6 +109,7 @@ datastream_groups = {
     index_patterns = [
       "logstash-alpha-apiext-klprod",
       "logstash-alpha-apiext-uat",
+      "logstash-pioneers-klprod-default",
       "logstash-pioneers-klprod-haproxy-nexcel",
       "logstash-pioneers-uat-haproxy-nexcel",
       "logstash-subarashi-deposit-api-klprod",
