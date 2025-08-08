@@ -82,6 +82,7 @@ datastream_groups = {
       # FPS
       "logstash-wabisabi-fingerprint-attribute",
       "logstash-wabisabi-login-trans7",
+      "logstash-wabisabi-mobile-app-login-trans7",
     ]
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
