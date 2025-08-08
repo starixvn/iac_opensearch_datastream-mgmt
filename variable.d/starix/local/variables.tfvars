@@ -1,4 +1,4 @@
-#####
+####
 opensearch_api = "https://opsi.nexdev.net"
 
 datastream_groups = {
