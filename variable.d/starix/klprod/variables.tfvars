@@ -14,7 +14,7 @@ datastream_groups = {
       "logstash-unknown",
     ]
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "5gb"
       cleanup_index_age   = "1d"
@@ -32,7 +32,7 @@ datastream_groups = {
     ]
     index_alias = "alias-haproxy-klprod"
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "10gb"
       hot_index_age       = "5d"
@@ -47,7 +47,7 @@ datastream_groups = {
     ]
     index_alias = "alias-haproxy-uat"
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "10gb"
       hot_index_age       = "5d"
@@ -63,7 +63,7 @@ datastream_groups = {
     ]
     index_alias = "alias-haproxy-sc-prod"
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "10gb"
       hot_index_age       = "5d"
@@ -78,7 +78,7 @@ datastream_groups = {
     ]
     index_alias = "alias-haproxy-sc-uat"
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "10gb"
       hot_index_age       = "5d"
@@ -95,7 +95,7 @@ datastream_groups = {
     ]
     index_alias = "alias-haproxy-ops"
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "5gb"
       hot_index_age       = "5d"
@@ -119,7 +119,7 @@ datastream_groups = {
 
     ]
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "5gb"
       hot_index_age       = "7d"
@@ -137,7 +137,7 @@ datastream_groups = {
     ]
     index_alias = "alias-vault-klprod"
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "5gb"
       hot_index_age       = "7d"
@@ -155,7 +155,7 @@ datastream_groups = {
       "logstash-kubesystem-container-log",
     ]
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "5gb"
       hot_index_age       = "3d"
@@ -171,7 +171,7 @@ datastream_groups = {
       "logstash-system-journal-prod",
     ]
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
+    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "5gb"
       hot_index_age       = "3d"
