@@ -19,7 +19,6 @@ datastream_groups = {
       rollover_index_size = "5gb"
       cleanup_index_age   = "1d"
     }
-
   }
 
   haproxy-prod = {

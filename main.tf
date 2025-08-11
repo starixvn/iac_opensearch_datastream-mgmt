@@ -24,6 +24,7 @@ resource "opensearch_ism_policy" "ism_policies" {
     rollover_index_age  = each.value.rollover_index_age
     rollover_index_size = each.value.rollover_index_size
     cleanup_index_age   = each.value.cleanup_index_age
+    hot_index_age       = each.value.hot_index_age
     index_patterns      = each.value.index_patterns
     priority            = each.value.priority
   })
