@@ -7,28 +7,28 @@
         "name": "hot",
         "actions": [
           {
-            "retry": {
-              "count": 3,
-              "backoff": "exponential",
-              "delay": "1m"
-            },
             "allocation": {
               "require": {
                 "temp": "hot"
               },
               "wait_for": false
-            }
-          },
-          {
+            },
             "retry": {
               "count": 3,
               "backoff": "exponential",
               "delay": "1m"
-            },
+            }
+          },
+          {
             "rollover": {
               "min_index_age": "${rollover_index_age}",
               "min_primary_shard_size": "${rollover_index_size}",
               "copy_alias": false
+            },
+            "retry": {
+              "count": 3,
+              "backoff": "exponential",
+              "delay": "1m"
             }
           }
         ],
@@ -45,28 +45,28 @@
         "name": "cold",
         "actions": [
           {
+            "replica_count": {
+              "number_of_replicas": 0
+            },
             "retry": {
               "count": 3,
               "backoff": "exponential",
               "delay": "1m"
-            },
-            "replica_count": {
-              "number_of_replicas": 0
             }
           },
           {
-            "retry": {
-              "count": 3,
-              "backoff": "exponential",
-              "delay": "1m"
-            },
             "allocation": {
               "require": {
                 "temp": "cold"
               },
               "wait_for": false
+            },
+            "retry": {
+              "count": 3,
+              "backoff": "exponential",
+              "delay": "1m"
             }
-          },
+          }
         ],
         "transitions": [
           {
@@ -81,12 +81,12 @@
         "name": "delete",
         "actions": [
           {
+            "delete": {},
             "retry": {
               "count": 3,
               "backoff": "exponential",
               "delay": "1m"
-            },
-            "delete": {}
+            }
           }
         ],
         "transitions": []
