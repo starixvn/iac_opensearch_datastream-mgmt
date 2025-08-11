@@ -14,7 +14,7 @@ datastream_groups = {
       "logstash-unknown",
     ]
     # Template ISM Policy file stay on policies directory
-    ism_policy_filename = "rollover-hot-cold-index.json.tpl"
+    ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
     ism_policy_rollover_condition = {
       rollover_index_size = "5gb"
       cleanup_index_age   = "1d"
