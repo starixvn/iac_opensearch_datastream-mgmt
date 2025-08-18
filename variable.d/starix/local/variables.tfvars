@@ -61,6 +61,7 @@ datastream_groups = {
     index_template_filename = "index-one-shard.json.tpl"
     index_patterns = [
       "logstash-container-nexops",
+      "logstash-kubescape",
     ]
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
