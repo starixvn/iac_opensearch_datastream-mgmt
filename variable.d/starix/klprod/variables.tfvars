@@ -116,7 +116,6 @@ datastream_groups = {
       "logstash-subarashi-deposit-api-uat",
       "logstash-subarashi-klprod-default",
       "logstash-subarashi-uat-default",
-
     ]
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-hot-cold-index.json.tpl"
