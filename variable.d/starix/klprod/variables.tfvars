@@ -106,6 +106,7 @@ datastream_groups = {
     priority                = 1005
     index_template_filename = "index-2reps-hot.json.tpl"
     index_patterns = [
+      "logstash-kubescape-uat",
       "logstash-alpha-apiext-klprod",
       "logstash-alpha-apiext-uat",
       "logstash-pioneers-klprod-default",
