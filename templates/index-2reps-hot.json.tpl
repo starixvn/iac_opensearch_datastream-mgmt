@@ -14,6 +14,27 @@
           }
         }
       }
+    },
+    "mappings": {
+      "properties": {
+        "geoip": {
+          "type": "object",
+          "properties": {
+            "city_name": {
+              "type": "keyword"
+            },
+            "country_name": {
+              "type": "keyword"
+            },
+            "location": {
+              "type": "geo_point"
+            },
+            "country_iso": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
     }%{ if index_alias != "" },
     "aliases": {
       "${index_alias}": {}
