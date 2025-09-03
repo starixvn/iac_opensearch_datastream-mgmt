@@ -7,8 +7,6 @@ datastream_groups = {
     index_template_filename = "index-one-shard.json.tpl"
     index_patterns = [
       "logstash-vault-unknown",
-      "logstash-haproxy-swarm-unknown-klprod",
-      "logstash-haproxy-ing-unknown-prod",
       "logstash-haproxy-unknown",
       "logstash-debug",
       "logstash-unknown",
