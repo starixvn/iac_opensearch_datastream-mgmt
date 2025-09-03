@@ -42,7 +42,7 @@ datastream_groups = {
     priority                = 1011
     index_template_filename = "index-2reps-hot.json.tpl"
     index_patterns = [
-      "logstash-haproxy-swarm-starix-stuat",
+      "logstash-haproxy-swarm-starix-uat",
     ]
     index_alias = "alias-haproxy-uat"
     # Template ISM Policy file stay on policies directory
