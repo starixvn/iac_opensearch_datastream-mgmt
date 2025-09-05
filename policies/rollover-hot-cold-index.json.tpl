@@ -11,6 +11,8 @@
               "require": {
                 "temp": "hot"
               },
+              "exclude": {},
+              "include": {},
               "wait_for": false
             },
             "retry": {
@@ -59,6 +61,8 @@
               "require": {
                 "temp": "cold"
               },
+              "exclude": {},
+              "include": {},
               "wait_for": false
             },
             "retry": {
