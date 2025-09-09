@@ -42,7 +42,7 @@
               "type": "keyword"
             }
           }
-        },
+        }
       }
     }%{ if index_alias != "" },
     "aliases": {
