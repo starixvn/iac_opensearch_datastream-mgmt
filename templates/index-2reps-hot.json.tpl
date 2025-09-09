@@ -18,14 +18,6 @@
     "mappings": {
       "properties": {
         "status_code": { "type": "integer" },
-        "httpRequest": {
-          "type": "object",
-          "properties": {
-            "headers": {
-              "type": "nested"
-            }
-          }
-        },
         "geoip": {
           "type": "object",
           "properties": {
