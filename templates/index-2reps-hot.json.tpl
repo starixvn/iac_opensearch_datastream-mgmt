@@ -20,6 +20,7 @@
         "Tr": { "type": "integer" },
         "Tt": { "type": "integer" },
         "sc-status": { "type": "integer" },
+        "status_code": { "type": "integer" },
         "geoip": {
           "type": "object",
           "properties": {
