@@ -17,7 +17,9 @@
     },
     "mappings": {
       "properties": {
-        "status_code": { "type": "integer" },
+        "Tr": { "type": "integer" },
+        "Tt": { "type": "integer" },
+        "sc-status": { "type": "integer" },
         "geoip": {
           "type": "object",
           "properties": {
