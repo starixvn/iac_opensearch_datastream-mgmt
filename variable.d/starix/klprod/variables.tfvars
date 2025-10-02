@@ -106,7 +106,7 @@ datastream_groups = {
     index_template_filename = "index-2reps-hot.json.tpl"
     index_patterns = [
       "logstash-kubescape-uat",
-      "logstash-kubescape-scpt1",
+      "logstash-kubescape-scpt2",
       "logstash-alpha-apiext-klprod",
       "logstash-alpha-apiext-uat",
       "logstash-pioneers-klprod-default",
