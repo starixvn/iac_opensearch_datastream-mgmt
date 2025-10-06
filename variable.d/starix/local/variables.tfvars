@@ -78,6 +78,7 @@ datastream_groups = {
     index_patterns = [
       # SUBARASHI
       "logstash-subarashi-deposit-api-local",
+      "logstash-subarashi-aff-landing-page-local",
       "logstash-subarashi-local-default",
 
       # FPS
