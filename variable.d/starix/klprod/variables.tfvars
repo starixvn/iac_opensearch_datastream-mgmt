@@ -113,6 +113,7 @@ datastream_groups = {
       "logstash-pioneers-klprod-default",
       "logstash-pioneers-klprod-haproxy-nexcel",
       "logstash-pioneers-uat-haproxy-nexcel",
+      "logstash-subarashi-aff-landing-page",
       "logstash-subarashi-deposit-api-klprod",
       "logstash-subarashi-deposit-api-uat",
       "logstash-subarashi-klprod-default",
