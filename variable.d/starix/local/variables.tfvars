@@ -10,7 +10,6 @@ datastream_groups = {
       "logstash-syslog-unknown-local",
       "logstash-debug-local",
       "logstash-unknown-local",
-      "logstash-falco-local",
     ]
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-by-indexsize-indexage.json.tpl"
