@@ -155,6 +155,7 @@ datastream_groups = {
     index_patterns = [
       "logstash-kubesystem-systemd",
       "logstash-kubesystem-container-log",
+      "logstash-kube-audit",
     ]
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-hot-cold-index.json.tpl"
