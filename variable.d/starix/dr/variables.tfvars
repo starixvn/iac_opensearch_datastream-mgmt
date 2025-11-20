@@ -121,7 +121,7 @@ datastream_groups = {
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
-      rollover_index_size = "5gb"
+      rollover_index_size = "10gb"
       hot_index_age       = "3d"
       cleanup_index_age   = "7d"
     }
