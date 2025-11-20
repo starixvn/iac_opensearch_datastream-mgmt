@@ -25,7 +25,7 @@ datastream_groups = {
       "logstash-haproxy-st-alp-t2prod",
       "logstash-haproxy-st-was-t2prod",
     ]
-    index_alias = "alias-haproxy-klprod"
+    index_alias = "alias-haproxy-st-prod"
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
@@ -73,6 +73,8 @@ datastream_groups = {
     index_template_filename = "index-2reps-hot.json.tpl"
     index_patterns = [
       "logstash-kubescape-sc-t2prod",
+      "logstash-kubescape-st-t2prod",
+      "logstash-kubescape-st-alp-t2prod",
       "logstash-alpha-apiext-prod",
       "logstash-pioneers-prod-default",
       "logstash-pioneers-prod-haproxy-nexcel",
@@ -96,7 +98,7 @@ datastream_groups = {
     index_patterns = [
       "logstash-vault-audit-st-prod",
     ]
-    index_alias = "alias-vault-klprod"
+    index_alias = "alias-vault-st-prod"
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-hot-cold-index.json.tpl"
     ism_policy_rollover_condition = {
@@ -114,6 +116,7 @@ datastream_groups = {
     index_patterns = [
       "logstash-kubesystem-systemd",
       "logstash-kubesystem-container-log",
+      "logstash-kube-audit",
     ]
     # Template ISM Policy file stay on policies directory
     ism_policy_filename = "rollover-hot-cold-index.json.tpl"
